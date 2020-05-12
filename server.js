@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 
 
-let port = 1234;
+let port = process.env.PORT || 1234;
 const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
